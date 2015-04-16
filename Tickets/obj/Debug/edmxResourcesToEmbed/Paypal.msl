@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PaypalModelStoreContainer" CdmEntityContainer="PaypalEntities">
+    <EntitySetMapping Name="Attendees">
+      <EntityTypeMapping TypeName="PaypalModel.Attendee">
+        <MappingFragment StoreEntitySet="Attendees">
+          <ScalarProperty Name="AttendeeID" ColumnName="AttendeeID" />
+          <ScalarProperty Name="custom" ColumnName="custom" />
+          <ScalarProperty Name="txnID" ColumnName="txnID" />
+          <ScalarProperty Name="paymentDate" ColumnName="paymentDate" />
+          <ScalarProperty Name="payerFisrtName" ColumnName="payerFisrtName" />
+          <ScalarProperty Name="payerLastName" ColumnName="payerLastName" />
+          <ScalarProperty Name="payerEmail" ColumnName="payerEmail" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="paymentGross" ColumnName="paymentGross" />
+          <ScalarProperty Name="paymentStatus" ColumnName="paymentStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IPNs">
+      <EntityTypeMapping TypeName="PaypalModel.IPN">
+        <MappingFragment StoreEntitySet="IPN">
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+          <ScalarProperty Name="txTime" ColumnName="txTime" />
+          <ScalarProperty Name="custom" ColumnName="custom" />
+          <ScalarProperty Name="buyerEmail" ColumnName="buyerEmail" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="paymentStatus" ColumnName="paymentStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
